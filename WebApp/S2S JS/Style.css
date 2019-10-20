@@ -1,0 +1,13 @@
+.crveno {
+    color: red;
+}
+
+.crna-pozadina {
+    background: #000;
+    color: white;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+}

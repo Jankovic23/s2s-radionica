@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>S2S comments</title>
+</head>
+
+<body>
+    <div class="unesi-radionicu">
+        <h1>S2S comments</h1>
+        <p class="boja-siva">WebApp Workshop</p>
+        <p class="boja-bela">Unesi šifru</p>
+        <input type="text">
+        <button>Startuj</button>
+    </div>
+
+    <div class="glavni-deo">
+        <h1 class="text-center">S2S comments</h1>
+        <p class="boja-siva text-center">WebApp Workshop</p>
+
+        <div class="pitanja">
+            <p class="boja-bela">Radionice: <span id="radionica"></span> </p>
+            <p class="boja-bela">Ime:<span id="ime1"></span> </p>
+
+            <ul>
+
+            </ul>
+        </div>
+
+        <div class="pitanje">
+            <input type="text">
+            <button>Pošalji</button>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBUML9VG1a8RZ2t6iIxinGHP83o_QgETbg",
+            authDomain: "s2s-aplikacija-ff1ac.firebaseapp.com",
+            databaseURL: "https://s2s-aplikacija-ff1ac.firebaseio.com",
+            projectId: "s2s-aplikacija-ff1ac",
+            storageBucket: "s2s-aplikacija-ff1ac.appspot.com",
+            messagingSenderId: "819440441681",
+            appId: "1:819440441681:web:b18db1d5f3ecb516d61b70"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="startovanje.js"></script>
+</body>
+
+</html>

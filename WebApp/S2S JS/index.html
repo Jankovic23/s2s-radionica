@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <title>S2S JavaScript</title>
+</head>
+
+<body>
+
+    <div class="crna-pozadina box">
+
+    </div>
+
+    <h1 class="naslov">Hello World!</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id laborum magnam, accusantium numquam nam inventore quos obcaecati sequi quae recusandae harum nostrum aperiam laboriosam. At in a explicabo dolores?</p>
+
+    <p id="promeni">Nesto </p>
+
+    <div class="punoletstvo">
+        <p>Da li je punoletan?</p>
+        <input type="number" id="input-za-punoletstvo">
+        <button id="submitDugme"> Proveri</button>
+        <p id="odgovor"></p>
+    </div>
+
+    <div class="unos-html">
+
+        <p>Unesi HTML za unos</p>
+        <input type="text" />
+        <button>Unesi</button>
+
+        <ul>
+
+        </ul>
+
+    </div>
+
+    <form>
+        <p>Pritisni dugme da dobijes sledecu rec</p>
+        <button>
+            Sledece
+        </button>
+        <span></span>
+
+    </form>
+
+    <script src="main.js"></script>
+
+    <!-- script je za JS, ispisuje se kod u Consle
+    <script>
+        var naslov = document.querySelector('h1');
+
+        naslov.textContent = "hello S2S"
+
+        //naslov.style.display = "none"
+
+        naslov.style.color = "blue";
+        naslov.classList.add('crveno');
+        // nalazi prvi <p> i dodjeljuje tu vrednost paragrafu
+        var paragraf = document.querySelector('p');
+        paragraf.innerHTML += "dodat HTML";
+
+        function promeniHtml(html) {
+
+            paragraf.innerHTML = html;
+
+        }
+
+        function promeniHtmlElementu(element, html) {
+            element.innerHTML = html;
+        }
+
+        promeniHtml("<h4>H4 tag</h4>");
+        promeniHtmlElementu(paragraf, "<h1>GILI GILI</h1>");
+
+        function vratiPrviElement(selektor) {
+
+            return document.querySelector(selektor);
+
+        }
+
+        var nekiElement = vratiPrviElement("p#promeni");
+
+        console.log(nekiElement);
+
+        var htmlZaElement = "<hr/>Neki Tekst<hr/>";
+
+        promeniHtmlElementu(nekiElement, htmlZaElement);
+
+        function daLiJePunoletan(godine) {
+            //  return godine >= 18;
+            var odgovor = godine >= 18 ? "Jeste" : "Nije"; //TERNARNI OPERATOR
+            return odgovor;
+        }
+        //switch, if
+        console.log(daLiJePunoletan(24));
+        promeniHtmlElementu(document.querySelector("#odgovor"), daLiJePunoletan(18));
+
+        // for (let i = 0; i < 15; i++) {
+        //     console.log(i);
+        // }
+
+        var paragrafi = document.querySelectorAll('p');
+
+        console.log(paragrafi);
+
+        //classList.remove('klasa')
+
+        for (var i = 0; i < paragrafi.length; i++) {
+            paragrafi[i].classList.add('crna-pozadina');
+
+        }
+        // for (var paragraf of paragrafi) {
+        //     paragraf.classList.add('crna-pozadina');
+        // }
+
+        //document.querySelector('p').classList.add("crna-pozadina"); - Menja samo prvi paragraf
+
+
+        var submitDugme = document.querySelector("#submitDugme");
+        submitDugme.addEventListener("click", function() {
+            console.log("dugme je pritisnuto");
+            var inputZaGodine = querySelector("#input-za-punoletstvo");
+            var godine = inputZaGodine.value;
+            console.log("godine " + godine);
+
+            promeniHtmlElementu(document.querySelector("#odgovor"), daLiJePunoletan(godine));
+
+        })
+    </script> -->
+
+
+</body>
+
+</html>

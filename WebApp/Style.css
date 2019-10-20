@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    /* padding: 10px 5px; */
+    /* padding-top: 20px; */
+    padding: 10px;
+    border: 1px rgb(107, 99, 99) solid;
+    margin: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+.div-1 {
+    background-color: darkslategray;
+}
+
+.div-1 img {
+    width: 100px;
+}
+
+#div-1 p {
+    color: aqua;
+    padding: 30px;
+}
+
+.Boje-crveno {
+    color: red;
+}
+
+.pozadina-plava {
+    background: blue;
+}
+
+.pozadina-plava.Boje-crveno {
+    font-size: 234%;
+}
+
+p.Boje-crveno {
+    color: purple;
+}
+
+.pozadina-plava.Boje-crveno H1 {
+    color: wheat;
+}

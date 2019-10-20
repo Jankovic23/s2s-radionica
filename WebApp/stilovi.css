@@ -1,0 +1,102 @@
+p {
+    text-align: center;
+}
+
+#sakriveno {
+    display: none;
+}
+
+.inline {
+    background: orange;
+    display: inline;
+    /* ne radi zbog display:inline;
+    height: 200px; */
+}
+
+.inline-b {
+    background: lightsalmon;
+    /* block zauzim acelu stranicu, inline block zauzima sve u istom redu */
+    display: inline-block;
+    height: 150px;
+}
+
+#gili {
+    position: absolute;
+    background: red;
+    /* 25px od vrha ekrana */
+    top: 0px;
+    /* pomera za 50% u levo */
+    /* left: 50%; */
+    width: 100%;
+}
+
+.gore-desno {
+    /* element je fiksiran, pomera se sa stranicom */
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: yellow;
+}
+
+.na-vrh img {
+    height: 50px;
+    width: 50px;
+    /* animacija taje 0.7s */
+    transition: 0.7s;
+    border-radius: 100%;
+    /* forwards -  */
+    animation: pulsiraj 1s infinite forwards alternate;
+    /* animation-name: pulsiraj;
+    animation-timing-function: 1s; */
+}
+
+
+/* definisali animaciju "pulsiraj" */
+
+@keyframes pulsiraj {
+    from {
+        /* prvobitno stanje*/
+        transform: scale(1);
+    }
+    to {
+        /* u ovo stanje*/
+        transform: scale(1.2);
+    }
+}
+
+.na-vrh img:hover {
+    background: red;
+    padding: 10px;
+    /* promena velicine */
+    transform: scale(1.2);
+}
+
+.na-vrh {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.elementi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* menajmo kako se stvari prikazuju ako je sirina ekrana(screen) do (max-width)500px */
+
+@media screen and (max-width:500px) {
+    .elementi {
+        /* kako se prikazuju elementi, bice jedno ispod drugog */
+        flex-direction: column;
+    }
+}
+
+.elementi div {
+    width: 30%;
+}
+
+.elementi div img {
+    max-width: 100%;
+}

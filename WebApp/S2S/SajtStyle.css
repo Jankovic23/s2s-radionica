@@ -1,0 +1,86 @@
+body {
+    background: #030e3c;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.unesi-radionicu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* zauzima celu sirinu ekrana, 1vh je 1% sirine/duzine ekrana */
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+    color: white;
+    background: #314fc5;
+    border: 2px #7e8ecf;
+    border-radius: 25px;
+    padding: 15px 20px;
+}
+
+button:hover {
+    background: #7e8ecf;
+}
+
+.boja-siva {
+    color: #CCC;
+}
+
+.boja-bela {
+    color: white;
+    font-size: 25px;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+input {
+    /* unutrasnjost izmedju teksta i ivice */
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid #7e8ecf;
+    background: #314fc5;
+    border-radius: 25px;
+}
+
+.glavni-deo h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pitanja {
+    margin-left: 40px;
+}
+
+.pitanje {
+    background: #0f33c4;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    padding-left: 20px;
+}
